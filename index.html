@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Javascript Hangman Game</title>
+
+  <!-- Reset CSS -->
+  <!-- <link href="assets/css/reset.css" rel="stylesheet"> -->
+
+	<!-- Bootstrap CSS -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+	<div class="container text-center">
+		<div class="container game-container">
+			
+			<div class="game-header">
+				<h3><b>Game of Thrones Characters</b></h3>
+			</div>
+
+			<div class="score-box">
+				<p>A Javascript Hangman Game</p>
+				<p><b>Spoiler-free Play</b><br>
+				Press any key to guess<br>
+				or get hint for help</p>
+
+				<p><b>Total Wins</b><br>
+				<b><span id="userWins">&nbsp;</span></b></p>
+			</div>
+
+			<div id="word">
+				<p><b>Guess This Character</b><br></p>
+				<!-- Create element for answer -->
+			</div>
+
+			<div id="guess">
+				<!-- Show user guesses -->
+				<p>
+				<span id="userGuessPile">&nbsp;</span></p>
+			</div>
+
+			<div id="direwolf-den">
+				<!-- Create element for lives -->
+				<!-- Direwolf dynamically killed if user makes incorrect guess -->
+			</div>
+			
+			<div id="stats">
+				<!-- Update lives -->
+				<!-- <p><span id="userLivesCount"></span> Direwolves Remaining</p> -->
+			</div>
+
+			<div class="hint-box" id="hint">
+				<!-- Show hint -->
+				<p><span id="hintContent">&nbsp;</span></p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Custom Javascript -->
+	<script src="assets/js/game.js"></script>
+
+</body>
+</html>

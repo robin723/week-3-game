@@ -1,0 +1,109 @@
+/*
+Color Palette
+#04090B
+#1B292B
+#172226
+#2B373B
+#9A9C9D
+*/
+
+body {
+  background-color: #010101;
+  color: #9A9C9D;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+b {
+  color: #fff;
+}
+
+.game-container {
+  background-image: url('../img/bg_winter.jpg');
+  background-size: 370px;
+  background-repeat: no-repeat;
+  width: 370px;
+  min-width: 370px;
+  max-width: 370px;
+  max-height: 800px;
+}
+
+.score-box p, #word p, #stats p, #guess p {
+  color: #666;
+  font-size: 12px;
+}
+
+.direwolf-den {
+  display: block;
+}
+
+.direwolf {
+  display: inline;
+  width: 45px;
+  height: 45px;
+}
+
+.direwolf-kill {
+  opacity: .25;
+}
+
+#letters {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+#letters li {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  margin: 20px 0;
+  padding: 0 2px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.game-header h3, .hint-box, #hint, #gameover, #stats, #guess {
+  background-color: #172226;
+  padding: 15px;
+  margin: 15px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#guess {
+  background-color: transparent;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+  min-height: 20px;
+  letter-spacing: 1px;
+}
+
+.hint-box p, #stats p {
+  margin: 0;
+}
+
+#stats:hover, .hint-box:hover {
+  background-color: #2B373B;
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+  opacity: .5;
+}
+
+#userLivesCount {
+  font-weight: bolder;
+}
+
+#hint-disabled {
+  opacity: .5;
+}
+
+#stats, #you-win {
+  background-color: #9A9C9D;
+  color: #172226;
+}
+#you-win, #game-over {
+  color: red;
+}
